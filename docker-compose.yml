@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: php:8.2-cli
+    container_name: my-php-container
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
